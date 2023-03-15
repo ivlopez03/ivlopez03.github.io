@@ -107,6 +107,48 @@ h3{
     border-radius: 5px;
 }
 
+.projects-view{
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    width: 56%;
+}
+.projects-view p{
+    font-size: 14px;
+}
+
+.github-link{
+    position: relative;
+    float: right;
+    display: flex;
+    justify-items: center;
+    width: fit-content;
+    background-color:#fff;
+    padding:1px 3px;
+    border: 0.3px solid #474747;
+    border-radius: 3px;
+    color: #474747;
+    text-decoration: none;
+}
+.name-icon{
+    font-size: 10px;
+    position: relative;
+    top: 4px;
+}
+
+ion-icon {
+    margin-right: 3px;
+    font-size: 16px;
+  }
+
+  .github-link:hover{
+    background-color: #6b6bf3;
+    color: #fff;
+    border-style: none;
+  }
+
+
+
 
 
 
@@ -129,6 +171,9 @@ h3{
         display:block
     }
     .experience-view{
+        width: 90%;
+    }
+    .projects-view{
         width: 90%;
     }
 }
