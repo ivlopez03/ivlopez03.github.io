@@ -1,0 +1,135 @@
+body{
+    background-color: #e5ffec;
+    font-family: 'Inter';
+    margin-top: 50px;
+}
+
+main{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mypage p{
+    font-size: 14px;
+}
+
+.first-view {
+    width: 250px;
+    margin: 0 auto;
+}
+.first-view a{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+
+.cardview{
+    margin: 10px;
+    padding: 7px;
+    border: 0.3px solid #474747;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ;
+}
+
+.cardview:hover{
+    transform: scale(1.04);
+   background-color: #6b6bf3;
+    color: white;
+}
+
+
+.about-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px 30px;
+    padding: 5px;
+
+   
+}
+.about-section h2{
+   margin: 0;
+}
+.about-section section{
+    margin: 0 15px;
+
+}
+.about-section ul{
+    font-size: 14px;
+    padding: 0;
+    list-style: none;
+}
+
+.about-section a{
+    color: #6b6bf3;
+}
+
+.experience-view{
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    width: 56%;
+    
+}
+
+.job-pos{
+    display: inline-flex;
+    align-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left:  10px;
+}
+.date{
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.experience-view p{
+    font-size: 14px;
+}
+.tools{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin: 2px 0;
+    padding: 2px 0;
+}
+.tools span{
+    position: relative;
+    font-size: 10px;
+    margin-right: 3px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .first-view{
+    width:100%;
+    }
+    main{
+    width:100%;
+    }
+    .about-section{
+        position: relative;
+        display: block;
+       
+    }
+    .about-section section{
+        position: relative;
+        display:block
+    }
+    .experience-view{
+        width: 90%;
+    }
+}
+
