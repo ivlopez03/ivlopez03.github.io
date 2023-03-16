@@ -73,7 +73,6 @@ main{
     margin: 0 auto;
     padding: 5px;
     width: 56%;
-    
 }
 
 .job-pos{
@@ -112,9 +111,28 @@ h3{
     margin: 0 auto;
     padding: 5px;
     width: 56%;
+    height:fit-content;
+   
 }
 .projects-view p{
     font-size: 14px;
+    
+}
+
+
+.img-container img{
+    width: 300px; 
+    float: left;
+    padding: 1px; 
+    margin-right: 3px;
+    border-radius: 10px;
+
+}
+
+.projects-view section{
+    height: 170px;
+    margin-bottom: 10px;
+    
 }
 
 .github-link{
@@ -133,25 +151,69 @@ h3{
 .name-icon{
     font-size: 10px;
     position: relative;
-    top: 4px;
+    top: 4.5px;
 }
 
 ion-icon {
+    top: 4.5;
     margin-right: 3px;
     font-size: 16px;
   }
 
   .github-link:hover{
-    background-color: #6b6bf3;
+    background-color: #474747;
     color: #fff;
     border-style: none;
   }
 
 
+.connect-form{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 40%;
+    text-align: center;
+}
+.connect-form form{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connect-form input{
+    display: block;
+    margin: 10px 0px;
 
+}
+#email-input{
+    font-family:'Inter';
+    width: 200px;
+    padding:4px;
+    border-style: none;
+    border-radius: 3px;
+}
+#msg-input{
+    width: 200px;
+    padding: 3px;
+    border-style: none;
+    border-radius: 3px;
 
-
-
+}
+#submit-btn{
+    font-family: 'Inter';
+    font-weight: 600;
+    border:none; 
+    border-radius: 3px;
+    background-color: #6b6bf3;
+    color: white;  
+    padding: 5px;
+    cursor: pointer;
+}
+#submit-btn:hover{
+    background-color: #4f4fbb;
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -174,7 +236,48 @@ ion-icon {
         width: 90%;
     }
     .projects-view{
+        display: block;
+        
         width: 90%;
+    }
+    
+
+    
+    .img-container img{
+        width: 100%;
+        float: none;
+        margin-bottom: 5px;
+    
+    }
+    .projects-view section{
+        display: block;
+        height: fit-content;
+        
+    }
+    .projects-view p{
+        margin-bottom: 20px;
     }
 }
 
+@media only screen and (max-width: 980px) {
+    .projects-view{
+        display: block;
+        
+        width: 90%;
+    }
+    
+
+    
+    .img-container img{
+        width: 100%;
+        float: none;
+        margin-bottom: 5px;
+    
+    }
+    .projects-view section{
+        display: block;
+        height: fit-content;
+        margin-bottom:10px;
+    }
+
+}
