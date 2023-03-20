@@ -13,7 +13,7 @@ app.get('/', function(req, res){
     res.sendFile( `${__dirname}/index.html`);
 })
 
-app.post('/send-email', async (req, res)=>{
+app.get('/', async (req, res)=>{
     dotenv.config()
     const {email,message} = req.body;
 
