@@ -10,7 +10,7 @@ app.use(express.static('assets'))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
-app.post('/', async (req, res)=>{
+app.post('/send-email', async (req, res)=>{
     dotenv.config()
     const {email,message} = req.body;
 
@@ -43,7 +43,7 @@ app.post('/', async (req, res)=>{
           console.log('Email sent: ' + info.response);
         }
       });
-      res.sendFile( `index.html`);
+      res.send( 'received' );
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
