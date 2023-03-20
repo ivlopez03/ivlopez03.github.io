@@ -4,11 +4,14 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.use(express.static('src'))
-app.use(express.static('assets'))
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
+
+app.get('/', function(req, res){
+    res.sendFile( `${__dirname}/index.html`);
+})
 
 app.post('/send-email', async (req, res)=>{
     dotenv.config()
