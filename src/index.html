@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/tired.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/assets/tired.png">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="tired.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="tired.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
     <title>Ivan Lopez</title>
 </head>
 <body>
     <main>
         <section class="mypage">
-            <img src="/assets/IMG_0613-removebg-preview.png" alt="" style="width: 70px;height: 70px; border-radius:50%; object-fit: cover;">
+            <img src="IMG_0613-removebg-preview.png" alt="" style="width: 70px;height: 70px; border-radius:50%; object-fit: cover;">
             <h1>Ivan Lopez</h1>
             <p>Hello👋 welcome to my page. </p>
         </section>
@@ -79,8 +79,8 @@
     <div class="projects-view">
         <h2>Projects</h2>
         <section>
-            <div class="img-container"><img src="/assets/redim.gif" alt="" ></div>
-            <h3><span style="font-size: 14px; margin-right: 3px;">🌌</span> Redim vscode extension</span><span><a class="github-link" href="https://github.com/ivlopez03/ivcommit-cli"><span><ion-icon name="logo-github"></ion-icon></span><span class="name-icon">Repository</span></a></span></h3>
+            <div class="img-container"><img src="redim.gif" alt="" ></div>
+            <h3><span style="font-size: 14px; margin-right: 3px;">🌌</span> Redim vscode extension</span><span><a class="github-link" href="https://github.com/ivlopez03/redim"><span><ion-icon name="logo-github"></ion-icon></span><span class="name-icon">Repository</span></a></span></h3>
             <div class="tools">
                 <span style="background-color: rgb(52, 133, 83); color: white;">NodeJs</span>
                 <span style="background-color: rgb(56, 99, 255);color: white;">TypeScript</span>
@@ -94,7 +94,7 @@
             </p>
         </section>
         <section>
-            <div class="img-container"><img src="/assets/ivcommit-cli.gif" alt="" ></div>
+            <div class="img-container"><img src="ivcommit-cli.gif" alt="" ></div>
             <h3><span style="font-size: 14px; margin-right: 3px;">🧰</span> ivcommit-cli</span><span><a class="github-link" href="https://github.com/ivlopez03/ivcommit-cli"><span><ion-icon name="logo-github"></ion-icon></span><span class="name-icon">Repository</span></a></span></h3>
             <div class="tools">
                 <span style="background-color: rgb(52, 133, 83); color: white;">NodeJs</span>
@@ -129,10 +129,10 @@
 
     <div class="connect-form">
         <h3>Let's connect 🧡 !!</h3>
-        <form action="">
+        <form id="email-form" method="post" >
             <input id="email-input" type="email" placeholder="Insert your email" name="email">
             <textarea name="message" id="msg-input" cols="30" rows="10" placeholder="Type a message"></textarea>
-            <input id="submit-btn" type="submit"> 
+            <button id="submit-btn" type="submit"> 
         </form>
     </div>
     
@@ -140,5 +140,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    
+    
 </body>
 </html>

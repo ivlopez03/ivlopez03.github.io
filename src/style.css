@@ -140,9 +140,8 @@ h3{
     float: right;
     display: flex;
     justify-items: center;
-    width: fit-content;
     background-color:#fff;
-    padding:1px 3px;
+    padding:1px 6px;
     border: 0.3px solid #474747;
     border-radius: 3px;
     color: #474747;
