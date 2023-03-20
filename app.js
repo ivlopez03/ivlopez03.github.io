@@ -43,7 +43,7 @@ app.post('/', async (req, res)=>{
           console.log('Email sent: ' + info.response);
         }
       });
-      res.sendFile( `${__dirname}/src/index.html`);
+      res.sendFile( `${__dirname}/index.html`);
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
