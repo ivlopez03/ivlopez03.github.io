@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
-const express = require('express')
+const express = require('express');
 const app = express()
 const port = 3000
 
@@ -44,11 +44,13 @@ app.post('/send-email', async (req, res)=>{
           console.log(error);
         } else {
           console.log('Email sent: ' + info.response);
+          res.sendFile(`${__dirname}/index.html`)
           
         }
       });
       res.render(`${__dirname}/index.html`)    
 })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
