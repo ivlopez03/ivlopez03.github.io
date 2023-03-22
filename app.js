@@ -13,7 +13,7 @@ app.get('/', function(req, res){
     res.sendFile( `${__dirname}/index.html`);
 })
 
-app.post('/', async (req, res)=>{
+app.post('/send-email', async (req, res)=>{
     dotenv.config()
     const {email,message} = req.body;
 
@@ -46,7 +46,7 @@ app.post('/', async (req, res)=>{
           console.log('Email sent: ' + info.response);
         }
       });
-      res.send( 'received' );
+      res.sendFile( `${__dirname}/index.html`);
 })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
