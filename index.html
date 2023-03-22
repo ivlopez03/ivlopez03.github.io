@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="tired.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="tired.png">
+    <link rel="shortcut icon" href="/assets/tired.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/tired.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
     <title>Ivan Lopez</title>
 </head>
 <body>
+    <button class="switch" id="switch">
+        <span id="light"><ion-icon name="sunny-outline" ></ion-icon></span>
+        <span id="dark"><ion-icon name="moon-outline"></ion-icon></span>
+    </button>
     <main>
         <section class="mypage">
             <img src="/assets/IMG_0613-removebg-preview-optimized.webp" alt="" style="width: 70px;height: 70px; border-radius:50%; object-fit: cover;">
@@ -152,6 +156,30 @@
             buttonMailto.setAttribute('href',`mailto:ivlopez.dev@gmail.com?subject=${getForm.get('name')} ${getForm.get('email')}&body=${getForm.get('message')}`)
             buttonMailto.click()
 
+        }
+    </script>
+    <script>
+        const bdark = document.getElementById('switch');
+        const body = document.getElementsByTagName('body')[0];
+
+        load();
+
+        bdark.addEventListener('click',e =>{
+            e.preventDefault();
+            body.classList.toggle('darkmode')
+            storage(body.classList.contains('darkmode'));
+        })
+
+        function load(){
+            const darkmode = localStorage.getItem('darkmode');
+            if (!darkmode){
+                storage('false');
+            }else if (darkmode == 'true'){
+                body.classList.add('darkmode');
+            }
+        }
+        function storage(value){
+            localStorage.setItem('darkmode',value)
         }
     </script>
     

@@ -2,12 +2,81 @@ body{
     background-color: #e5ffec;
     font-family: 'Inter';
     margin-top: 50px;
+    transition: 0.2s ease all;
 }
 
 main{
     width: 400px;
     margin: 0 auto;
     text-align: center;
+}
+
+.switch{
+    position: relative;
+    top: -30px;
+    right: 30px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding:5px;
+    border: 0.2px solid #7979798e;
+    background: transparent;
+    box-shadow: 1px 0.5px 0.5px 0.5px  rgba(0, 0, 0,0.3);
+}
+.switch span{
+    display: flex;
+    align-content: center;
+}
+
+
+#light{
+    margin: 0 auto;
+    position: absolute;
+    opacity: 0;
+}
+.darkmode #dark{
+    position: absolute;
+    opacity: 0;
+    
+}
+.darkmode #light{
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 1;
+    color: white;
+}
+#light ion-icon{
+    margin: 0 auto;
+}
+#dark ion-icon{
+    margin: 0 auto;
+}
+
+.switch:hover{
+    transition: 0.1s;
+    background-color: #ffffffd5;
+    box-shadow: 1px 1px 1px 1px  rgba(0, 0, 0,0.3);
+    
+}
+.darkmode .switch:hover{
+    transition: 0.1s;
+    background-color: orange;
+   
+
+}
+
+body.darkmode {
+    background-color: #24293b;
+    color: white;
+    transition: 0.2s ease all;
+}
+.darkmode #switch{
+    color: white;
+}
+.darkmode #switch{
+    color: white;
 }
 
 .mypage p{
@@ -32,12 +101,12 @@ main{
     border: 0.3px solid #474747;
     border-radius: 3px;
     background-color: rgb(255, 255, 255);
-    transition: transform 0.3s ;
+   
 }
 
 .cardview:hover{
     transform: scale(1.04);
-   background-color: #6b6bf3;
+    background-color: #6b6bf3;
     color: white;
 }
 
