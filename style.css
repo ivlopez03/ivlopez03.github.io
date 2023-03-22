@@ -175,7 +175,7 @@ ion-icon {
     text-align: center;
 }
 .connect-form form{
-    display: block;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,20 +187,33 @@ ion-icon {
 
 }
 #email-input{
-    font-family:'Inter';
     width: 200px;
     padding:4px;
-    border-style: none;
+    font-size: 12px;
+    border: 0.3px solid #000000;
     border-radius: 3px;
+    margin-bottom: 0;
 }
-#msg-input{
+#subject {
     width: 200px;
+    font-size: 12px;
     padding: 3px;
-    border-style: none;
+    border: 0.3px solid #000000;
     border-radius: 3px;
 
 }
+#msg-input{
+    font-size: 12px;
+    font-family: 'Inter';
+    width: 200px;
+    padding: 3px;
+    border-radius: 3px;
+    border: 0.3px solid #000000;
+   
+
+}
 #submit-btn{
+    margin-top: 5px;
     font-family: 'Inter';
     font-weight: 600;
     border:none; 
@@ -209,10 +222,16 @@ ion-icon {
     color: white;  
     padding: 5px;
     cursor: pointer;
+
 }
 #submit-btn:hover{
     background-color: #4f4fbb;
 }
+
+#openSendEmail{
+    opacity: 0;
+    position: relative;
+    left: -200px;}
 
 
 @media only screen and (max-width: 480px) {

@@ -129,17 +129,31 @@
 
     <div class="connect-form">
         <h3>Let's connect 🧡 !!</h3>
-        <form id="email-form" method="post" >
+        <form id="email-form" >
             <input id="email-input" type="email" placeholder="Insert your email" name="email">
+            <input type="text" name="name" id="subject" placeholder="Name">
             <textarea name="message" id="msg-input" cols="30" rows="10" placeholder="Type a message"></textarea>
             <button id="submit-btn" type="submit">send</button>
         </form>
+        <a href="mailto:ivlopez.dev@gmail.com" id="openSendEmail">mail</a>
     </div>
     
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const form = document.getElementById('email-form')
+        const buttonMailto = document.getElementById('openSendEmail')
+        form.addEventListener('submit',handleSubmit)
+        function handleSubmit(event) {
+            event.preventDefault()
+            const getForm = new FormData(this)
+            buttonMailto.setAttribute('href',`mailto:ivlopez.dev@gmail.com?subject=${getForm.get('name')} ${getForm.get('email')}&body=${getForm.get('message')}`)
+            buttonMailto.click()
+
+        }
+    </script>
     
     
     
