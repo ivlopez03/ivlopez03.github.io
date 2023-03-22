@@ -1,7 +1,7 @@
 body{
     background-color: #e5ffec;
     font-family: 'Inter';
-    margin-top: 50px;
+    margin-top: 20px;
     transition: 0.2s ease all;
 }
 
@@ -13,8 +13,8 @@ main{
 
 .switch{
     position: relative;
-    top: -30px;
-    right: 30px;
+    top: 0px;
+    right: 20px;
     float: right;
     border-radius: 5px;
     border: none;
