@@ -1,5 +1,5 @@
 body{
-    background-color: #e5ffec;
+    background-color: #f7f7f7;
     font-family: 'Inter';
     margin-top: 20px;
     transition: 0.2s ease all;
@@ -62,13 +62,13 @@ main{
 }
 .darkmode .switch:hover{
     transition: 0.1s;
-    background-color: orange;
+    background-color: rgba(230, 230, 230, 0.158);
    
 
 }
 
 body.darkmode {
-    background-color: #24293b;
+    background-color: #302d2a;
     color: white;
     transition: 0.2s ease all;
 }
@@ -94,6 +94,12 @@ body.darkmode {
     text-decoration: none;
     color: rgb(35, 35, 35);
 }
+.darkmode #cardview{
+    background-color:#302d2a ;
+    color: white;
+    border: 0.3px solid #7a7a7a;
+    
+}
 
 .cardview{
     margin: 10px;
@@ -106,8 +112,8 @@ body.darkmode {
 
 .cardview:hover{
     transform: scale(1.04);
-    background-color: #6b6bf3;
-    color: white;
+    background-color: #fbffca;
+    
 }
 
 
