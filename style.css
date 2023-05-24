@@ -68,7 +68,7 @@ main{
 }
 
 body.darkmode {
-    background-color: #302d2a;
+    background-color: #23201e;
     color: white;
     transition: 0.2s ease all;
 }
